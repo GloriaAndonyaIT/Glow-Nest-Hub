@@ -1,0 +1,133 @@
+{
+    "styles": [
+      {
+        "id": "1",
+        "category": "Clothes",
+        "title": "Casual Jeans and T-shirt",
+        "description": "Comfortable and easy-going casual look for everyday wear.",
+        "image": "https://pin.it/3O0kKwuhg",
+        "is_favorite": false
+      },
+      {
+        "id": "2",
+        "category": "Clothes",
+        "title": "Bohemian Maxi Dress",
+        "description": "Flowy, boho chic maxi dress perfect for a summer day out.",
+        "image": "https://pin.it/51GEDt04C",
+        "is_favorite": false
+      },
+      {
+        "id": "3",
+        "category": "Clothes",
+        "title": "Black Blazer and Pencil Skirt",
+        "description": "A sharp and professional look ideal for office wear or meetings.",
+        "image": "https://pin.it/2ZfjuKkOs",
+        "is_favorite": true
+      },
+      {
+        "id": "4",
+        "category": "Clothes",
+        "title": "Evening Gown",
+        "description": "Elegant, floor-length gown perfect for formal events.",
+        "image": "https://pin.it/6kSDmyFh1",
+        "is_favorite": false
+      },
+      {
+        "id": "5",
+        "category": "Hair",
+        "title": "Twist Outs",
+        "description": "Defined curls created by twisting the hair and allowing it to set for a natural, voluminous look.",
+        "image": "https://pin.it/48WpRr3Rn",
+        "is_favorite": false
+      },
+      {
+        "id": "6",
+        "category": "Hair",
+        "title": "Box Braids",
+        "description": "Classic and versatile, box braids are a staple African hairstyle, offering a protective style with endless possibilities.",
+        "image": "https://pin.it/1WAaszRQC",
+        "is_favorite": true
+      },
+      {
+        "id": "7",
+        "category": "Hair",
+        "title": "Goddess Braids",
+        "description": "Thick, braided hairstyle that can be styled in many ways, adding volume and elegance.",
+        "image": "https://pin.it/7pwgoHBY0",
+        "is_favorite": false
+      },
+      {
+        "id": "8",
+        "category": "Hair",
+        "title": "Natural Afro with Defined Curls",
+        "description": "Full, voluminous afro hairstyle with beautifully defined curls that celebrate natural hair texture.",
+        "image": "https://pin.it/1d1RU0UFI",
+        "is_favorite": false
+      },
+      {
+        "id": "9",
+        "category": "Nails",
+        "title": "French Manicure",
+        "description": "Classic nude base with white tips – timeless and elegant.",
+        "image": "https://pin.it/2vuOrqJbO",
+        "is_favorite": false
+      },
+      {
+        "id": "10",
+        "category": "Nails",
+        "title": "Acrylic Coffin Nails",
+        "description": "Long, sharp coffin-shaped acrylic nails in a rich burgundy color.",
+        "image": "https://pin.it/bfE6QEQHk",
+        "is_favorite": true
+      },
+      {
+        "id": "11",
+        "category": "Nails",
+        "title": "Ombre Gel Nails",
+        "description": "Ombre gel manicure with a smooth transition from pink to white.",
+        "image": "https://pin.it/6HmWo8wYX",
+        "is_favorite": false
+      },
+      {
+        "id": "12",
+        "category": "Nails",
+        "title": "Matte Black Nails",
+        "description": "Matte black nails for an edgy, stylish look.",
+        "image": "https://pin.it/17Gu0M8B4",
+        "is_favorite": false
+      },
+      {
+        "id": "13",
+        "category": "Heels",
+        "title": "Stiletto Heels",
+        "description": "A classic, thin heel style offering elegance and sophistication. Perfect for formal events and adding a touch of glamour.",
+        "image": "https://pin.it/ofvoyczRh",
+        "is_favorite": false
+      },
+      {
+        "id": "14",
+        "category": "Heels",
+        "title": "Block Heels",
+        "description": "Comfortable and stable heels with a thicker heel for everyday wear. Perfect for casual or semi-formal settings.",
+        "image": "https://pin.it/4FGMPgnAt",
+        "is_favorite": true
+      },
+      {
+        "id": "15",
+        "category": "Sport Shoes",
+        "title": "Chunky Sneakers",
+        "description": "Bold and trendy oversized sneakers that combine style and comfort. Ideal for casual outfits and street style.",
+        "image": "https://pin.it/c3zBgb6KW",
+        "is_favorite": true
+      },
+      {
+        "id": "16",
+        "category": "Sport Shoes",
+        "title": "Slip-On Sneakers",
+        "description": "Easy-to-wear slip-on sneakers that provide comfort and a sleek look for a relaxed, casual style.",
+        "image": "https://pin.it/69v72yg59",
+        "is_favorite": false
+      }
+    ]
+  }
+  
