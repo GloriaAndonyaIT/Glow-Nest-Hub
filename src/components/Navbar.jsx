@@ -1,62 +1,61 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div>
-      <nav className="bg-pink-50 border-gray-200 dark:bg-gray-900">
+      <nav className="bg-pink-50 border-gray-200 ">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
          
-          <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
-           
+        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
               src="./Images/GlowNest Hub.png"
               className="h-8"
               alt="GlowNest Hub Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-pink-700 dark:text-pink-300">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-pink-700 ">
               GlowNest Hub
             </span>
-          </a>
+          </Link>
 
           <div className="hidden md:flex items-center space-x-6">
            
             <ul className="flex space-x-6 font-medium">
               <li>
-                <a
-                  href="#"
-                  className="text-pink-700 hover:text-pink-900 dark:text-pink-300 dark:hover:text-pink-200"
+                <Link
+                  to="/"
+                  className="text-pink-700 hover:text-pink-900 "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-pink-700 dark:text-gray-300 dark:hover:text-pink-300"
+                <Link
+                  to="/gallery"
+                  className="text-gray-600 hover:text-pink-700 "
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
-                  className="text-gray-600 hover:text-pink-700 dark:text-gray-300 dark:hover:text-pink-300"
+                <Link
+                  to="/submit"
+                  className="text-gray-600 hover:text-pink-700 "
                 >
                   Submit
-                </a>
+                </Link>
               </li>
             </ul>
-
            
             <div className="relative">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg
                   className="w-4 h-4 text-pink-500"
                   aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
+                
                   fill="none"
                   viewBox="0 0 20 20"
                 >
@@ -73,8 +72,9 @@ function Navbar() {
               <input
                 type="text"
                 id="search-navbar"
-                className="block w-full p-2 ps-10 text-sm text-gray-900 border border-pink-200 rounded-full bg-white focus:ring-pink-500 focus:border-pink-500 dark:bg-gray-700 dark:border-pink-600 dark:placeholder-gray-400 dark:text-white"
-                placeholder="Search styles..."
+                className="block w-full p-2 ps-10 text-sm text-gray-900 border border-pink-200 rounded-full bg-white focus:ring-pink-500 focus:border-pink-500
+                "
+                placeholder="Find your next slay…"
               />
             </div>
           </div>
@@ -141,29 +141,29 @@ function Navbar() {
             </div>
             <ul className="flex flex-col p-4 font-medium border border-pink-100 rounded-lg bg-white ">
               <li className="mb-2">
-                <a
-                  href="#"
+                <Link
+                  to="/"
                   className="block py-2 px-3 text-white bg-pink-600 rounded-md "
                   aria-current="page"
                 >
                   Home
-                </a>
+                </Link>
               </li>
               <li className="mb-2">
-                <a
-                  href="#"
+                <Link
+                  to="/gallery"
                   className="block py-2 px-3 text-gray-900 rounded-md hover:bg-pink-100 "
                 >
                   Gallery
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="#"
+                <Link
+                  to="/submit"
                   className="block py-2 px-3 text-gray-900 rounded-md hover:bg-pink-100 "
                 >
                   Submit
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
