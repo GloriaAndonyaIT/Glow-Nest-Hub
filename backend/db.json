@@ -127,6 +127,30 @@
       "description": "Easy-to-wear slip-on sneakers that provide comfort and a sleek look for a relaxed, casual style.",
       "image": "https://i.pinimg.com/736x/8c/23/88/8c2388ca470eed9e03d6a61f8d111ce5.jpg",
       "is_favorite": false
+    },
+    {
+      "id": "1745407907958",
+      "category": "Heels",
+      "title": "Black heel",
+      "description": "Wear to my sisters",
+      "image": "https://i.pinimg.com/736x/55/2c/a9/552ca9b717c7af312fec0c64075eaa37.jpg",
+      "is_favorite": true
+    },
+    {
+      "id": "1745408362759",
+      "category": "Nails",
+      "title": "cutie ",
+      "description": "pinkish ",
+      "image": "https://i.pinimg.com/736x/c7/50/18/c75018cc4e1ddb2e1f6fff04fa29fea6.jpg",
+      "is_favorite": false
+    },
+    {
+      "id": "1745408498313",
+      "category": "Clothes",
+      "title": "shorts",
+      "description": "Vacation outfit",
+      "image": "https://i.pinimg.com/736x/fe/1d/e9/fe1de91fc11a23b3af7106a37e598f38.jpg",
+      "is_favorite": false
     }
   ]
 }

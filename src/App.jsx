@@ -1,31 +1,34 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Layout from "./components/Layout";
-import GalleryPage from "./pages/GalleryPage"; 
-import SubmitForm from "./components/SubmitForm";
+import GalleryPage from "./pages/GalleryPage";
+import SubmitPage from "./pages/SubmitPage";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import "./App.css";
 
 function App() {
   const [styles, setStyles] = useState([]);
-  
+  const [searchQuery, setSearchQuery] = useState("");
+
   // Fetch initial styles from API
   useEffect(() => {
     fetch("http://localhost:3000/styles")
       .then((response) => response.json())
       .then((data) => {
         setStyles(data);
-        console.log("Initial styles loaded:", data);
       })
-      .catch(error => console.error("Error loading styles:", error));
+      .catch(error => {
+        console.error("Error loading styles:", error);
+      });
   }, []);
 
   const handleAddStyle = (newStyle) => {
+    // Add to local state first
     setStyles([...styles, newStyle]);
-    console.log("New style added:", newStyle);
-    
-    // Send new style to API
+
+    // Send to API
     fetch("http://localhost:3000/styles", {
       method: "POST",
       headers: {
@@ -34,45 +37,76 @@ function App() {
       body: JSON.stringify(newStyle),
     })
       .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
-      })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Error adding style:", error);
       });
   };
 
   const handleDeleteStyle = (id) => {
-    // Update local state first for immediate UI update
-    setStyles(styles.filter(style => style.id !== id));
-    
+    // Optimistically update UI
+    const updatedStyles = styles.filter(style => style.id !== id);
+    setStyles(updatedStyles);
+
     // Delete from API
     fetch(`http://localhost:3000/styles/${id}`, {
       method: "DELETE",
     })
-      .then(response => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        console.log(`Style with id ${id} deleted successfully`);
-      })
       .catch(error => {
         console.error("Error deleting style:", error);
-        // Revert the state change if the API call fails
+        // Revert back if failed
         fetch("http://localhost:3000/styles")
           .then(response => response.json())
           .then(data => setStyles(data));
       });
   };
 
+  const handleSearch = (query) => {
+    setSearchQuery(query);
+  };
+
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
-          <Route path="/" element={<HomePage styles={styles} />} />
-          <Route path="/gallery" element={<GalleryPage styles={styles} onDeleteStyle={handleDeleteStyle} />} />
-          <Route path="/submit" element={<SubmitForm onAddStyle={handleAddStyle} />} />
+          <Route
+            path="/"
+            element={
+              <HomePage styles={styles} onSearch={handleSearch} />
+            }
+          />
+          <Route
+            path="/gallery"
+            element={
+              <GalleryPage
+                styles={styles}
+                onDeleteStyle={handleDeleteStyle}
+                onSearch={handleSearch}
+                searchQuery={searchQuery}
+              />
+            }
+          />
+          <Route
+            path="/submit"
+            element={
+              <SubmitPage
+                onAddStyle={handleAddStyle}
+                onSearch={handleSearch}
+              />
+            }
+          />
         </Routes>
+        <ToastContainer 
+          position="top-right"
+          autoClose={3000}
+          hideProgressBar={false}
+          newestOnTop
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </div>
     </BrowserRouter>
   );

@@ -1,21 +1,22 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar';
 
-function Navbar() {
+function Navbar({ onSearch }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div>
-      <nav className="bg-pink-50 border-gray-200 ">
+      <nav className="bg-pink-50 border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
          
-        <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
               src="./Images/GlowNest Hub.png"
               className="h-8"
               alt="GlowNest Hub Logo"
             />
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-pink-700 ">
+            <span className="self-center text-2xl font-semibold whitespace-nowrap text-pink-700">
               GlowNest Hub
             </span>
           </Link>
@@ -26,7 +27,7 @@ function Navbar() {
               <li>
                 <Link
                   to="/"
-                  className="text-pink-700 hover:text-pink-900 "
+                  className="text-pink-700 hover:text-pink-900"
                   aria-current="page"
                 >
                   Home
@@ -35,7 +36,7 @@ function Navbar() {
               <li>
                 <Link
                   to="/gallery"
-                  className="text-gray-600 hover:text-pink-700 "
+                  className="text-gray-600 hover:text-pink-700"
                 >
                   Gallery
                 </Link>
@@ -43,43 +44,18 @@ function Navbar() {
               <li>
                 <Link
                   to="/submit"
-                  className="text-gray-600 hover:text-pink-700 "
+                  className="text-gray-600 hover:text-pink-700"
                 >
-                  Submit
+                  Share your style
                 </Link>
               </li>
             </ul>
            
             <div className="relative">
-              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg
-                  className="w-4 h-4 text-pink-500"
-                  aria-hidden="true"
-                
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-                <span className="sr-only">Search icon</span>
-              </div>
-              <input
-                type="text"
-                id="search-navbar"
-                className="block w-full p-2 ps-10 text-sm text-gray-900 border border-pink-200 rounded-full bg-white focus:ring-pink-500 focus:border-pink-500
-                "
-                placeholder="Find your next slay…"
-              />
+              <SearchBar onSearch={onSearch} />
             </div>
           </div>
 
-         
           <div className="flex md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -92,7 +68,6 @@ function Navbar() {
               <svg
                 className="w-5 h-5"
                 aria-hidden="true"
-                
                 fill="none"
                 viewBox="0 0 17 14"
               >
@@ -107,7 +82,6 @@ function Navbar() {
             </button>
           </div>
 
-        
           <div
             className={`${
               isMenuOpen ? "block" : "hidden"
@@ -115,35 +89,13 @@ function Navbar() {
             id="navbar-search"
           >
             <div className="relative mb-4">
-              <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
-                <svg
-                  className="w-4 h-4 text-pink-500"
-                  aria-hidden="true"
-              
-                  fill="none"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
-                  />
-                </svg>
-              </div>
-              <input
-                type="text"
-                id="search-navbar-mobile"
-                className="block w-full p-2 ps-10 text-sm text-gray-900 border border-pink-200 rounded-full bg-white focus:ring-pink-500 focus:border-pink-500"
-                placeholder="Search styles..."
-              />
+              <SearchBar onSearch={onSearch} />
             </div>
-            <ul className="flex flex-col p-4 font-medium border border-pink-100 rounded-lg bg-white ">
+            <ul className="flex flex-col p-4 font-medium border border-pink-100 rounded-lg bg-white">
               <li className="mb-2">
                 <Link
                   to="/"
-                  className="block py-2 px-3 text-white bg-pink-600 rounded-md "
+                  className="block py-2 px-3 text-white bg-pink-600 rounded-md"
                   aria-current="page"
                 >
                   Home
@@ -152,7 +104,7 @@ function Navbar() {
               <li className="mb-2">
                 <Link
                   to="/gallery"
-                  className="block py-2 px-3 text-gray-900 rounded-md hover:bg-pink-100 "
+                  className="block py-2 px-3 text-gray-900 rounded-md hover:bg-pink-100"
                 >
                   Gallery
                 </Link>
@@ -160,7 +112,7 @@ function Navbar() {
               <li>
                 <Link
                   to="/submit"
-                  className="block py-2 px-3 text-gray-900 rounded-md hover:bg-pink-100 "
+                  className="block py-2 px-3 text-gray-900 rounded-md hover:bg-pink-100"
                 >
                   Submit
                 </Link>
