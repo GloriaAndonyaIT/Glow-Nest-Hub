@@ -14,7 +14,7 @@ function App() {
 
   // Fetch initial styles from API
   useEffect(() => {
-    fetch("http://localhost:3000/styles")
+    fetch("https://glow-nest-hub-1.onrender.com/styles")
       .then((response) => response.json())
       .then((data) => {
         setStyles(data);
@@ -29,7 +29,7 @@ function App() {
     setStyles([...styles, newStyle]);
 
     // Send to API
-    fetch("http://localhost:3000/styles", {
+    fetch("https://glow-nest-hub-1.onrender.com/styles", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,13 +48,13 @@ function App() {
     setStyles(updatedStyles);
 
     // Delete from API
-    fetch(`http://localhost:3000/styles/${id}`, {
+    fetch(`https://glow-nest-hub-1.onrender.com/styles/${id}`, {
       method: "DELETE",
     })
       .catch(error => {
         console.error("Error deleting style:", error);
         // Revert back if failed
-        fetch("http://localhost:3000/styles")
+        fetch("https://glow-nest-hub-1.onrender.com/styles")
           .then(response => response.json())
           .then(data => setStyles(data));
       });
