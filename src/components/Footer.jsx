@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoImage1 from "/Images/GlowNestlogo.jpg";
 
 function Footer() {
   return (
@@ -11,7 +12,7 @@ function Footer() {
             className="flex items-center mb-6 sm:mb-0 space-x-3 rtl:space-x-reverse"
           >
             <img
-              src="./Images/GlowNest logo.jpg"
+              src={logoImage1}
               className="h-8"
               alt="GlowNest Logo"
             />

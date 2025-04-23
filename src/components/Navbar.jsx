@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import SearchBar from "./SearchBar";
-import logoImage from "/Images/GlowNestHub.png";
+import { Link } from 'react-router-dom';
+import SearchBar from './SearchBar';
+import logoImage from '/Images/GlowNestHub.png';
 
 function Navbar({ onSearch }) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,17 +10,20 @@ function Navbar({ onSearch }) {
     <div>
       <nav className="bg-pink-50 border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <Link
-            to="/"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
-          >
-            <img src={logoImage} className="h-8" alt="GlowNest Hub Logo" />
+         
+          <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src={logoImage}
+              className="h-8"
+              alt="GlowNest Hub Logo"
+            />
             <span className="self-center text-2xl font-semibold whitespace-nowrap text-pink-700">
               GlowNest Hub
             </span>
           </Link>
 
           <div className="hidden md:flex items-center space-x-6">
+           
             <ul className="flex space-x-6 font-medium">
               <li>
                 <Link
@@ -48,7 +51,7 @@ function Navbar({ onSearch }) {
                 </Link>
               </li>
             </ul>
-
+           
             <div className="relative">
               <SearchBar onSearch={onSearch} />
             </div>
