@@ -88,7 +88,7 @@ function HomePage({ styles, onSearch }) {
             className="relative overflow-hidden bg-gradient-to-r from-pink-500 to-pink-600 text-white px-8 py-4 rounded-full hover:shadow-xl transition-all shadow-lg transform hover:scale-105 group"
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
-              Share Your Style <span className="text-lg">💅</span>
+              Share Your Style <span className="text-lg"></span>
             </span>
             <span className="absolute inset-0 bg-gradient-to-r from-pink-600 to-pink-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></span>
           </Link>
@@ -195,7 +195,7 @@ function HomePage({ styles, onSearch }) {
         
         <section className="text-center bg-white p-8 rounded-xl shadow-md">
           <h2 className="text-2xl font-bold text-purple-600 mb-3">About GlowNest</h2>
-          <p className="text-gray-600 leading-relaxed max-w-2xl mx-auto mb-6">
+          <p className="text-gray-600  text-lg leading-relaxed max-w-4xl mx-auto mb-6">
             Welcome to GlowNest Hub 💄 — where beauty meets boldness and every glow-up has a story. This isn't just a hub; it's a whole vibe 💅 designed for ladies who dream big, dress loud, and walk with purpose.
             Here, we serve you the hottest hairstyles 💇‍♀️, trendiest outfits 👗, sleek heels 👠, and sporty kicks 👟 — all in one stylish space. Whether you're curating your next killer look or searching for daily inspiration, GlowNest Hub is your ultimate glam sanctuary 💋.
             We believe that when you glow with confidence and nest in your boldness, nothing can stop you. Because this hub isn't just about what you wear — it's about how you show up. 👸

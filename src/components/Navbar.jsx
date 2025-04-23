@@ -12,7 +12,7 @@ function Navbar({ onSearch }) {
          
           <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
             <img
-              src="./Images/GlowNest Hub.png"
+              src="./Images/GlowNestHub.png"
               className="h-8"
               alt="GlowNest Hub Logo"
             />
