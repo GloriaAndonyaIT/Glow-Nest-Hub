@@ -137,20 +137,20 @@
       "is_favorite": true
     },
     {
-      "id": "1745408362759",
-      "category": "Nails",
-      "title": "cutie ",
-      "description": "pinkish ",
-      "image": "https://i.pinimg.com/736x/c7/50/18/c75018cc4e1ddb2e1f6fff04fa29fea6.jpg",
-      "is_favorite": false
-    },
-    {
       "id": "1745408498313",
       "category": "Clothes",
       "title": "shorts",
       "description": "Vacation outfit",
       "image": "https://i.pinimg.com/736x/fe/1d/e9/fe1de91fc11a23b3af7106a37e598f38.jpg",
       "is_favorite": false
+    },
+    {
+      "id": "1745435235349",
+      "category": "Clothes",
+      "title": "fyguj",
+      "description": "fyguhk",
+      "image": "https://i.pinimg.com/736x/38/fc/04/38fc04186bab7708477a87a5b106f9b3.jpg",
+      "is_favorite": true
     }
   ]
 }
