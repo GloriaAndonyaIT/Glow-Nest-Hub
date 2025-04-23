@@ -33,7 +33,7 @@ function Footer() {
         </div>
         <hr className="my-6 border-pink-300 sm:mx-auto" />
         <span className="block text-sm text-pink-600 text-center">
-          💕 © 2025 GlowNest Hub 
+           © 2025 GlowNest Hub 💕 
           All Rights Reserved.
         </span>
       </div>

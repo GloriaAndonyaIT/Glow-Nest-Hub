@@ -6,7 +6,7 @@
       "title": "Casual Jeans and T-shirt",
       "description": "Comfortable and easy-going casual look for everyday wear.",
       "image": "https://i.pinimg.com/736x/dc/e1/19/dce119bd3d07e08c948df227994b3646.jpg",
-      "is_favorite": false
+      "is_favorite": true
     },
     {
       "id": "2",
@@ -127,38 +127,6 @@
       "description": "Easy-to-wear slip-on sneakers that provide comfort and a sleek look for a relaxed, casual style.",
       "image": "https://i.pinimg.com/736x/8c/23/88/8c2388ca470eed9e03d6a61f8d111ce5.jpg",
       "is_favorite": false
-    },
-    {
-      "id": "1745245031546",
-      "category": "Nails",
-      "title": "rtuyii",
-      "description": "rtyugiojo",
-      "image": "https://i.pinimg.com/736x/8c/23/88/8c2388ca470eed9e03d6a61f8d111ce5.jpg",
-      "is_favorite": true
-    },
-    {
-      "id": "1745247220839",
-      "category": "Sport Shoes",
-      "title": "sdfg",
-      "description": "qwerdtfghj",
-      "image": "https://i.pinimg.com/736x/38/fc/04/38fc04186bab7708477a87a5b106f9b3.jpg",
-      "is_favorite": false
-    },
-    {
-      "id": "1745248380586",
-      "category": "Heels",
-      "title": "Mule heels",
-      "description": "Wear to a date",
-      "image": "https://i.pinimg.com/736x/72/eb/f5/72ebf5832c82f7293833033b96b7d42f.jpg",
-      "is_favorite": true
-    },
-    {
-      "id": "1745265547290",
-      "category": "Nails",
-      "title": "e57r6t7y8",
-      "description": "strdytfyguhijo",
-      "image": "https://i.pinimg.com/736x/38/fc/04/38fc04186bab7708477a87a5b106f9b3.jpg",
-      "is_favorite": true
     }
   ]
 }
