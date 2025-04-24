@@ -7,7 +7,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import "./App.css";
-
+// function part
 function App() {
   const [styles, setStyles] = useState([]);
   const [searchQuery, setSearchQuery] = useState("");
