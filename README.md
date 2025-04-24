@@ -71,6 +71,7 @@ npm start
 
 Check out the deployed version here:  
 👉 **[https://glow-nest-hub.vercel.app/]**
+my presentation slides https://app.presentations.ai/view/UkLk0G
 
 ---
 
