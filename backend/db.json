@@ -143,23 +143,9 @@
       "description": "Vacation outfit",
       "image": "https://i.pinimg.com/736x/fe/1d/e9/fe1de91fc11a23b3af7106a37e598f38.jpg",
       "is_favorite": false
-    },
-    {
-      "id": "1745435235349",
-      "category": "Clothes",
-      "title": "fyguj",
-      "description": "fyguhk",
-      "image": "https://i.pinimg.com/736x/38/fc/04/38fc04186bab7708477a87a5b106f9b3.jpg",
-      "is_favorite": true
-    },
-    {
-      "id": "1745440706940",
-      "category": "Clothes",
-      "title": "dtfygu",
-      "description": "dtfyguj",
-      "image": "https://i.pinimg.com/736x/8c/23/88/8c2388ca470eed9e03d6a61f8d111ce5.jpg",
-      "is_favorite": false
     }
+    
+   
     
    
   ]
